@@ -2,3 +2,7 @@
 import streamlit
 
 streamlit.title('Diner! new menu! blahblahbalh')
+
+streamlit.header('Breakfast Menu')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
+streamlit.text('Kale, Spinach & rocket smoothie.  Blech')
