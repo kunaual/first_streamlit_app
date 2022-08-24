@@ -4,6 +4,8 @@ import pandas
 import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_curwh = my_cnx.cursor()
+my_curwh.execute("use warehouse compute_wh")
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row = my_cur.fetchone()
