@@ -14,6 +14,7 @@ streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you liketo add?','jackfruit')
 streamlit.text('Thanks for adding ' + add_my_fruit)
+my_curr.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
