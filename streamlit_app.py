@@ -52,8 +52,8 @@ except URLError as e:
 
 
 
-my_curwh = my_cnx.cursor()
-my_curwh.execute("use warehouse compute_wh")
+# my_curwh = my_cnx.cursor()
+# my_curwh.execute("use warehouse compute_wh")
 # my_cur = my_cnx.cursor()
 
 
